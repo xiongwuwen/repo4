@@ -26,14 +26,14 @@ public class jdbcUtil {
 		
 		
 	}
-	 //2.创建DButils核心工具类对象
+	 //2.创建DButils核心工具类对象 xiugaile
 	
 	public static QueryRunner getQueryRunner(){
 		//创建QueryRunner对象，传入连接池对象
  // QueryRunner() 括号里传入了数据源对象 ，	使用QueryRunner对象方法的时候，不需要传入连接对象了，
 		// 会自动从数据源中获取连接，不用关闭连接
 		QueryRunner qr=new QueryRunner(dataSource);
- 
+               
 		return qr; 
 	}
 	
